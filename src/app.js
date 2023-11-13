@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 
 // Middleware para servir arquivos estáticos
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname,'..', 'public')));
 
 // Rota para a página inicial
 app.get('/', (req, res) => {
